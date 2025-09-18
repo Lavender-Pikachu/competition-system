@@ -1,0 +1,86 @@
+# ========================
+# OS & Editor
+# ========================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Linux
+*~
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.log
+
+# ========================
+# Global logs & temp files
+# ========================
+*.log
+*.tmp
+*.swp
+*.swo
+tmp/
+*.pid
+
+# ========================
+# Services directories (multi-language)
+# ========================
+# Assuming services/* contains different languages
+
+# ------------------------
+# Go services
+# ------------------------
+services/**/bin/
+services/**/build/
+services/**/out/
+services/**/vendor/
+services/**/*.test
+
+# ------------------------
+# Java / SpringBoot services
+# ------------------------
+services/**/target/
+services/**/build/
+services/**/.gradle/
+services/**/*.class
+services/**/.settings/
+services/**/.classpath
+services/**/.project
+
+# ------------------------
+# Python services
+# ------------------------
+services/**/__pycache__/
+services/**/venv/
+services/**/env/
+services/**/.venv/
+services/**/build/
+services/**/dist/
+services/**/*.egg-info/
+services/**/.eggs/
+
+# ========================
+# Docker & Kubernetes
+# ========================
+infra/docker/docker-compose.override.yml
+infra/docker/*.env
+infra/docker/*.secret
+infra/k8s/*.yaml
+
+# ========================
+# Configurations
+# ========================
+# Ignore sensitive production configs
+configs/prod/*.yml
+configs/prod/*.env
+
+# ========================
+# Scripts temporary files
+# ========================
+scripts/tmp/
+tests/tmp/
